@@ -73,7 +73,7 @@ programming-language-lab/
 │   └── 01-introduction/ … 08-concurrency/
 ```
 
-Los módulos agrupan los ejercicios por temática y mantienen una numeración común para facilitar su localización y comparación. En C#, JavaScript y `x-lenguaje/` cada ejercicio tiene una carpeta con el número de su vídeo. En Java no hay carpetas por ejercicio: cada módulo es un proyecto Maven y cada ejercicio, una clase.
+Los módulos agrupan los ejercicios por temática y mantienen una numeración común para facilitar su localización y comparación. En C#, JavaScript y `x-lenguaje/` cada ejercicio tiene una carpeta con el número de su vídeo. En Java no hay carpetas por ejercicio: cada módulo es un proyecto Maven y cada ejercicio, una clase (salvo `01-introduction/`, que solo contiene documentación).
 
 Los nombres de las lecciones que dependen de la tecnología (introducción, instalación, creación de proyecto, LINQ, WPF y ADO.NET) usan el equivalente de cada lenguaje; el detalle está en el README de cada uno.
 

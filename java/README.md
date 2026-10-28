@@ -10,7 +10,7 @@ Lenguaje complementario. Replica los ejercicios de C# para comparar ambos lengua
 
 ## Organización
 
-Un proyecto Maven por módulo, con una clase independiente por ejercicio en la estructura estándar `src/main/java`. No hay carpetas por ejercicio: cada ejercicio es una clase del módulo.
+Un proyecto Maven por módulo, con una clase independiente por ejercicio en la estructura estándar `src/main/java`. No hay carpetas por ejercicio: cada ejercicio es una clase del módulo. La excepción es `01-introduction/`, que solo contiene documentación y mantiene una carpeta por lección.
 
 ```text
 java/
