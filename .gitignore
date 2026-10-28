@@ -1,0 +1,33 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Maven
+target/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# IDE y editores (configuración local)
+.vs/
+.vscode/
+.idea/
+*.iml
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Temporales y sistema operativo
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
