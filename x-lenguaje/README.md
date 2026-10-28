@@ -8,7 +8,7 @@ Incluye los ocho módulos y las carpetas de ejercicios del itinerario inicial. L
 
 1. Copiar la carpeta `x-lenguaje/` en la raíz del repositorio con el nombre del lenguaje, en minúsculas (por ejemplo, `python/`).
 2. Sustituir este README por uno propio con el objetivo, las herramientas, la organización de los ejercicios y los comandos básicos.
-3. Añadir el lenguaje al README principal y a las columnas de `docs/progress.md`.
+3. Añadir el lenguaje al README principal.
 
 ## Adaptar herramientas y configuración
 

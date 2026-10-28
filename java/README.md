@@ -21,7 +21,7 @@ java/
         └── Variables.java
 ```
 
-Los nombres de clase usan PascalCase en inglés, equivalente al concepto de la lección (`04-data-types` → `DataTypes`). El número de la lección se indica en un comentario de la clase y se registra en [`docs/progress.md`](../docs/progress.md).
+Los nombres de clase usan PascalCase en inglés, equivalente al concepto de la lección (`04-data-types` → `DataTypes`). El número de la lección se indica en un comentario de la clase.
 
 ## Equivalencias con el curso de C#
 

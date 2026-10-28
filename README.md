@@ -71,11 +71,6 @@ programming-language-lab/
 ├── x-lenguaje/      (plantilla para futuros lenguajes)
 │   ├── README.md
 │   └── 01-introduction/ … 08-concurrency/
-│
-└── docs/
-    ├── progress.md
-    ├── language-comparison.md
-    └── resources.md
 ```
 
 Los módulos agrupan los ejercicios por temática y mantienen una numeración común para facilitar su localización y comparación. En C#, JavaScript y `x-lenguaje/` cada ejercicio tiene una carpeta con el número de su vídeo. En Java no hay carpetas por ejercicio: cada módulo es un proyecto Maven y cada ejercicio, una clase.
@@ -218,7 +213,6 @@ Cada concepto se trabaja siguiendo el mismo proceso:
 2. **Java:** implementar una solución equivalente.
 3. **JavaScript:** resolver el mismo problema utilizando Node.js.
 4. **Comparación:** identificar diferencias de sintaxis, tipado, estructuras y funcionamiento.
-5. **Documentación:** registrar las conclusiones relevantes.
 
 No todos los conceptos tienen una equivalencia directa entre lenguajes.
 
@@ -233,22 +227,6 @@ Por ejemplo:
 | Dictionary | HashMap | Map |
 
 Las alternativas se seleccionan según las características de cada ecosistema.
-
----
-
-## 📊 Documentación y progreso
-
-La documentación se encuentra en el directorio `docs/`.
-
-| Archivo | Contenido |
-|---|---|
-| `progress.md` | Seguimiento de los ejercicios por lenguaje |
-| `language-comparison.md` | Diferencias y equivalencias entre lenguajes |
-| `resources.md` | Cursos, documentación y recursos de aprendizaje |
-
-El progreso se registra de forma independiente para C#, Java y JavaScript.
-
-**Estados:** ⬜ Pendiente · 🟡 En desarrollo · ✅ Completado · 🔵 No aplicable.
 
 ---
 
