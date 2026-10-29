@@ -28,7 +28,7 @@ Forma parte de mi formación en **Desarrollo de Aplicaciones Web (DAW)** y está
 | Lenguaje | Entorno | Herramientas | IDE |
 |---|---|---|---|
 | C# | .NET | .NET CLI / NuGet | Visual Studio Code |
-| Java | JDK / JVM | Maven | IntelliJ IDEA |
+| Java | JDK / JVM | `java` / Maven (opcional) | IntelliJ IDEA |
 | JavaScript | Node.js | npm | Visual Studio Code |
 
 **Control de versiones:** Git y GitHub.
@@ -64,7 +64,7 @@ programming-language-lab/
 │
 ├── java/
 │   ├── README.md
-│   └── 01-introduction/ … 08-concurrency/   (un proyecto Maven por módulo)
+│   └── 01-introduction/ … 08-concurrency/   (un archivo .java por ejercicio)
 │
 ├── javascript/      (misma organización que csharp/)
 │
@@ -73,7 +73,7 @@ programming-language-lab/
 │   └── 01-introduction/ … 08-concurrency/
 ```
 
-Los módulos agrupan los ejercicios por temática y mantienen una numeración común para facilitar su localización y comparación. En C#, JavaScript y `x-lenguaje/` cada ejercicio tiene una carpeta con el número de su vídeo. En Java no hay carpetas por ejercicio: cada módulo es un proyecto Maven y cada ejercicio, una clase (salvo `01-introduction/`, que solo contiene documentación).
+Los módulos agrupan los ejercicios por temática y mantienen una numeración común para facilitar su localización y comparación. En todos los lenguajes y en `x-lenguaje/` cada ejercicio tiene una carpeta con el número de su vídeo.
 
 Los nombres de las lecciones que dependen de la tecnología (introducción, instalación, creación de proyecto, LINQ, WPF y ADO.NET) usan el equivalente de cada lenguaje; el detalle está en el README de cada uno.
 
@@ -140,40 +140,26 @@ dotnet build
 
 Los ejercicios avanzados podrán utilizar otras plantillas de .NET y dependencias NuGet.
 
-### ☕ Java — Maven
+### ☕ Java — JDK
 
-Se utiliza **un proyecto Maven por módulo**, con clases independientes para cada ejercicio.
+Se utiliza **un archivo `.java` por ejercicio práctico**, ejecutado directamente con el JDK. Maven solo aparece en la lección 03 y se usará cuando haya dependencias.
 
 ```text
 java/
 └── 02-fundamentals/
-    ├── pom.xml
-    └── src/
-        ├── main/
-        │   └── java/
-        │       └── lab/
-        │           └── fundamentals/
-        │               ├── DataTypes.java
-        │               └── Variables.java
-        └── test/
-            └── java/
+    └── 05-variables/
+        ├── Variables.java
+        └── variables.md
 ```
 
-Los proyectos se generan mediante Maven o los asistentes de IntelliJ IDEA.
-
-**Compilar:**
+**Compilar y ejecutar:**
 
 ```bash
-mvn compile
+cd 05-variables
+java Variables.java
 ```
 
-**Ejecutar pruebas:**
-
-```bash
-mvn test
-```
-
-Los ejercicios se ejecutan principalmente desde IntelliJ IDEA.
+También se pueden ejecutar desde IntelliJ IDEA con el botón junto a `main`.
 
 ### 🟨 JavaScript — Node.js
 

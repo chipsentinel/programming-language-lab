@@ -1,5 +1,3 @@
-package lab.fundamentals;
-
 import java.math.BigDecimal;
 
 public class DataTypes {

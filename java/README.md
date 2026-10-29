@@ -5,23 +5,22 @@ Lenguaje complementario. Replica los ejercicios de C# para comparar ambos lengua
 ## Herramientas
 
 - JDK
-- Maven
+- Maven (solo para proyectos con dependencias; ver lección 03)
 - IntelliJ IDEA
 
 ## Organización
 
-Un proyecto Maven por módulo, con una clase independiente por ejercicio en la estructura estándar `src/main/java`. No hay carpetas por ejercicio: cada ejercicio es una clase del módulo. La excepción es `01-introduction/`, que solo contiene documentación y mantiene una carpeta por lección.
+Una carpeta por lección igual que en C# y JavaScript, con un único archivo `.java` y el `.md` de la lección. Se ejecuta directamente con `java Archivo.java`, sin proyecto Maven. Maven solo se usa en la lección 03 (`03-create-maven-project/`), que explica cómo es un proyecto Maven completo, y se retomará cuando haya dependencias.
 
 ```text
 java/
 └── 02-fundamentals/
-    ├── pom.xml
-    └── src/main/java/lab/fundamentals/
+    └── 04-data-types/
         ├── DataTypes.java
-        └── Variables.java
+        └── data-types.md
 ```
 
-Los nombres de clase usan PascalCase en inglés, equivalente al concepto de la lección (`04-data-types` → `DataTypes`). El número de la lección se indica en un comentario de la clase.
+Los nombres de clase usan PascalCase en inglés, equivalente al concepto de la lección (`04-data-types` → `DataTypes`).
 
 ## Equivalencias con el curso de C#
 
@@ -38,8 +37,9 @@ Los módulos y su numeración coinciden con los del curso. Algunas lecciones usa
 ## Comandos básicos
 
 ```bash
-mvn compile   # compilar
-mvn test      # ejecutar pruebas
+java Archivo.java   # compilar y ejecutar un archivo
 ```
 
-Los ejercicios se ejecutan principalmente desde IntelliJ IDEA.
+También se pueden ejecutar desde IntelliJ IDEA con el botón junto a `main`.
+
+Para un proyecto Maven (lección 03): `mvn compile` y `mvn test`.

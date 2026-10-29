@@ -1,14 +1,16 @@
 # Crear un proyecto Maven en Java
 
-Guía rápida con los comandos para crear un módulo. Un proyecto Maven por módulo y una clase por ejercicio.
+Guía rápida con los comandos para crear un proyecto Maven. Es la lección equivalente a `dotnet new console` en C#.
 
-## Estructura del módulo
+A partir de la lección 04, los ejercicios son un único archivo `.java` que se ejecuta con `java Archivo.java`, sin Maven. Un proyecto Maven completo hace falta cuando se necesitan dependencias, pruebas o empaquetar el programa.
 
-Desde la carpeta del módulo (ya existe en el repositorio):
+## Estructura del proyecto
+
+Desde la carpeta de la lección:
 
 ```bash
-cd java/02-fundamentals
-mkdir -p src/main/java/lab/fundamentals
+cd java/01-introduction/03-create-maven-project
+mkdir -p src/main/java/lab/introduction
 touch pom.xml
 ```
 mkdir -p => crea la carpeta y las intermedias que falten
@@ -17,16 +19,17 @@ touch => crea un archivo vacío
 En PowerShell, en lugar de `mkdir -p` y `touch`:
 
 ```powershell
-New-Item -ItemType Directory -Force src/main/java/lab/fundamentals
+cd java/01-introduction/03-create-maven-project
+New-Item -ItemType Directory -Force src/main/java/lab/introduction
 New-Item pom.xml
 ```
 
 Resultado:
 
 ```text
-02-fundamentals/
+03-create-maven-project/
 ├── pom.xml
-└── src/main/java/lab/fundamentals/
+└── src/main/java/lab/introduction/
 ```
 
 ## pom.xml mínimo
@@ -38,7 +41,7 @@ Resultado:
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>lab</groupId>
-  <artifactId>fundamentals</artifactId>
+  <artifactId>hello-world</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -50,18 +53,18 @@ Resultado:
 
 Ajustar `maven.compiler.release` a la versión del JDK instalado.
 
-## Crear una clase de ejercicio
+## Crear una clase
 
 ```bash
-touch src/main/java/lab/fundamentals/Variables.java
+touch src/main/java/lab/introduction/HelloWorld.java
 ```
 
 Contenido mínimo de la clase (equivalente al `Program.cs` generado por `dotnet new console`):
 
 ```java
-package lab.fundamentals;
+package lab.introduction;
 
-public class Variables {
+public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
@@ -72,7 +75,7 @@ public class Variables {
 
 ```bash
 mvn compile
-java -cp target/classes lab.fundamentals.Variables
+java -cp target/classes lab.introduction.HelloWorld
 ```
 mvn compile => compila el código a `target/classes`
 -cp => classpath: carpeta donde están las clases compiladas

@@ -1,6 +1,6 @@
 # Tipos de datos en Java
 
-Equivalente de la lección 04 del curso de C#. En Java, los ejercicios son clases del módulo: este concepto se implementaría en `lab.fundamentals.DataTypes`.
+Equivalente de la lección 04 del curso de C#. En Java, cada lección es un archivo `.java` en su carpeta, como el `Program.cs` de C#: este concepto se implementa en `DataTypes.java`.
 
 ## Qué es un tipo de dato
 
@@ -8,7 +8,7 @@ Un tipo de dato indica qué clase de valor puede guardar una variable, cuánta m
 
 ```java
 int edad = 25;
-String nombre = "Ana";
+String nombre = "Sol";
 ```
 
 ## Tipos primitivos y tipos por referencia
@@ -125,7 +125,6 @@ System.out.println(Double.MAX_VALUE);
 ## Comandos
 
 ```bash
-cd java/02-fundamentals
-mvn compile
-java -cp target/classes lab.fundamentals.DataTypes
+cd java/02-fundamentals/04-data-types
+java DataTypes.java
 ```

@@ -16,7 +16,7 @@ El código fuente se compila a *bytecode*, que ejecuta la **JVM** (máquina virt
 ## Herramientas en este repositorio
 
 - **JDK:** compilador y herramientas de desarrollo.
-- **Maven:** compilación y gestión de dependencias, con un proyecto por módulo.
+- **Maven:** compilación y gestión de dependencias. Se explica en la lección 03 y se usará cuando haya dependencias.
 - **IntelliJ IDEA:** entorno de desarrollo.
 
 ## Qué veremos
