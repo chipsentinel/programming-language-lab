@@ -35,8 +35,22 @@ dotnet build
 
 ```bash
 dotnet new list            # plantillas disponibles
-dotnet new classlib -n Exercise -o 26-classes-introduction   # biblioteca de clases
 dotnet --version           # versión del SDK
+```
+
+## `console` frente a `classlib`
+
+La plantilla que se escribe después de `dotnet new` decide qué se crea:
+
+| Plantilla | Genera | ¿Se puede ejecutar? |
+|---|---|---|
+| `console` | `Program.cs` | Sí, con `dotnet run` |
+| `classlib` | `Class1.cs` | No: no tiene punto de entrada |
+
+Para los ejercicios se usa **`console`**. `classlib` es una biblioteca de clases y solo se usa en casos concretos, por ejemplo:
+
+```bash
+dotnet new classlib -n Exercise -o 26-classes-introduction
 ```
 
 ## Resultado de `dotnet new console`
