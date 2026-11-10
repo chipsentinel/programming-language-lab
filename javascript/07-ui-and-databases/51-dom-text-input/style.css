@@ -1,0 +1,58 @@
+/* Apariencia de los cuadros de texto.
+   Las propiedades de CSS equivalen a las de WPF:
+     font-family / font-size  ->  FontFamily / FontSize (la letra con la que escribe el usuario)
+     color                    ->  Foreground            background-color  ->  Background */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+input {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 4px;
+}
+
+input.corto {
+    width: 80px;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 4px 0 16px;
+}
+
+button {
+    width: 100px;
+    height: 32px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#lResultado {
+    font-size: 18px;
+    color: darkgreen;
+    text-align: center;
+    margin: 0;
+}

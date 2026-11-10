@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadros de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- <label for="..."> acompaña a un campo: al hacer clic en el texto se enfoca el cuadro -->
+        <label for="txtNombre">Ingrese su nombre</label>
+
+        <!--
+            <input type="text">: un cuadro de texto (en WPF, TextBox). Lo escrito está en su propiedad value.
+            id: el nombre para usarlo desde JavaScript (en WPF, x:Name).
+            Con el atributo placeholder se puede añadir un texto de ayuda que desaparece al escribir.
+        -->
+        <input type="text" id="txtNombre">
+
+        <label for="txtEdad">Ingrese su edad</label>
+        <input type="text" id="txtEdad" class="corto">
+
+        <div class="botones">
+            <button id="btnIngresar" type="button">Ingresar</button>
+            <button id="btnBorrar" type="button">Borrar</button>
+        </div>
+
+        <p id="lResultado">Resultado</p>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
