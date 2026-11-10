@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzas y bebidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="columnas">
+
+            <!--
+                <input type="checkbox">: casilla de verificación. Se pueden marcar varias a la vez.
+                El texto se pone con un <label> que envuelve al input (hacer clic en el texto también la marca).
+                La propiedad checked indica si está marcada. Prefijo ck en el id: ck01, ck02...
+            -->
+            <fieldset class="pizzas">
+                <legend>Indique su sabor de pizza</legend>
+                <label><input type="checkbox" id="ck01"> Pizza de queso - $150.00</label>
+                <label><input type="checkbox" id="ck02"> Pizza de jamón y queso - $250.00</label>
+                <label><input type="checkbox" id="ck03"> Pizza de queso y pepperoni - $200.00</label>
+            </fieldset>
+
+            <!--
+                <input type="radio">: botón de opción. Entre los que comparten el mismo atributo name solo se puede elegir UNO.
+                (En WPF se agrupan por estar en el mismo contenedor; en JavaFX con un ToggleGroup.) Prefijo rb: rb01...
+            -->
+            <fieldset class="bebidas">
+                <legend>Indique su bebida</legend>
+                <label><input type="radio" name="bebida" id="rb01"> Pepsi - $30.00</label>
+                <label><input type="radio" name="bebida" id="rb02"> Coca-Cola - $30.00</label>
+                <label><input type="radio" name="bebida" id="rb03"> Sprite - $25.00</label>
+            </fieldset>
+        </div>
+
+        <div class="botones">
+            <button id="bOrdenar" type="button">Ordenar</button>
+            <button id="bCancelar" type="button">Cancelar</button>
+        </div>
+
+        <!-- Total de la orden: el span (lTotal) empieza vacío y se rellena desde JavaScript -->
+        <p class="total">Total de la orden: <span id="lTotal"></span></p>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

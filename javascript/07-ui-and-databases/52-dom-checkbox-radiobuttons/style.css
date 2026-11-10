@@ -1,0 +1,89 @@
+/* Apariencia de la ventana de pizzas y bebidas. Los colores y letras equivalen a las propiedades de WPF
+   (color -> Foreground, background-color -> Background, font-family / font-size -> FontFamily / FontSize). */
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 24px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0 16px;
+}
+
+legend {
+    font-size: 15px;
+    color: darkblue;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.pizzas {
+    width: 280px;
+}
+
+.bebidas {
+    width: 220px;
+}
+
+fieldset label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.pizzas label {
+    color: darkgreen;
+}
+
+.bebidas label {
+    color: darkolivegreen;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 24px 0 16px;
+}
+
+button {
+    width: 120px;
+    height: 34px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bOrdenar {
+    background-color: lightgreen;
+}
+
+#bCancelar {
+    background-color: lightsalmon;
+}
+
+.total {
+    text-align: center;
+    font-size: 16px;
+}
+
+#lTotal {
+    font-weight: bold;
+    color: darkred;
+}
