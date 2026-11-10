@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquetas y botones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!--
+            Una etiqueta (label) es simplemente un elemento de texto: <p>, <span>, <h1>...
+            (<label> existe, pero se reserva para acompañar a los campos de formulario: lección siguiente).
+            El id da un nombre para usarlo desde JavaScript (en WPF, x:Name).
+        -->
+        <p id="labelMensaje">Mensaje</p>
+
+        <div class="botones">
+            <button id="botonSaludar" type="button">Saludar</button>
+
+            <!-- El atributo disabled deja el botón desactivado al empezar (en WPF, IsEnabled="False") -->
+            <button id="botonDespedir" type="button" disabled>Despedir</button>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

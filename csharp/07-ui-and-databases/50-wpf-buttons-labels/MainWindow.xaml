@@ -1,0 +1,35 @@
+<Window x:Class="WpfButtonsLabels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Etiquetas y botones" Height="260" Width="420">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <!--
+            Label: una etiqueta. Su texto está en la propiedad Content.
+            Propiedades de apariencia:
+              Foreground  = color del texto          Background = color de fondo
+              FontFamily  = tipo de letra            FontSize   = tamaño (en píxeles)
+              FontWeight  = grosor (Bold = negrita)
+            x:Name da un nombre para usar la etiqueta desde el código C#.
+        -->
+        <Label x:Name="labelMensaje"
+               Content="Mensaje"
+               FontFamily="Verdana" FontSize="22" FontWeight="Bold"
+               Foreground="DarkBlue" Background="White"
+               HorizontalAlignment="Center" Margin="0,0,0,20" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <!--
+                Button: un botón. Click="..." indica el método de C# que se ejecuta al pulsarlo.
+                IsEnabled="False" lo deja desactivado al empezar.
+            -->
+            <Button x:Name="botonSaludar" Content="Saludar" Width="120" Height="36" Margin="0,0,12,0"
+                    Background="LightGreen" Foreground="Black" Click="BotonSaludar_Click" />
+
+            <Button x:Name="botonDespedir" Content="Despedir" Width="120" Height="36"
+                    Background="LightSalmon" Foreground="Black" IsEnabled="False" Click="BotonDespedir_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>

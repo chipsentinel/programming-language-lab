@@ -1,0 +1,54 @@
+/* Apariencia de la etiqueta y los botones.
+   Las propiedades de CSS equivalen a las de WPF:
+     color            ->  Foreground (color del texto)
+     background-color ->  Background (color de fondo)
+     font-family      ->  FontFamily        font-size   ->  FontSize        font-weight  ->  FontWeight */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+/* La etiqueta: se selecciona por su id con # */
+#labelMensaje {
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: darkblue;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;                       /* espacio entre los botones */
+    justify-content: center;
+}
+
+button {
+    width: 120px;
+    height: 36px;
+    cursor: pointer;
+}
+
+#botonSaludar {
+    background-color: lightgreen;
+}
+
+#botonDespedir {
+    background-color: lightsalmon;
+}
+
+/* Un botón desactivado se ve atenuado y no responde */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
