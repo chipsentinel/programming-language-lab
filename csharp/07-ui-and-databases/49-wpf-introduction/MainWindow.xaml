@@ -1,0 +1,24 @@
+<!--
+    MainWindow.xaml: el DISEÑO de la ventana, escrito en XAML (un lenguaje de etiquetas parecido a HTML).
+    Cada etiqueta es un elemento de la interfaz: Window, Grid, TextBlock, Button...
+    Los atributos (Title, Height, Width...) son sus propiedades.
+-->
+<Window x:Class="WpfIntroduction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ventana principal" Height="260" Width="400">
+
+    <!-- Grid: contenedor que organiza los elementos en filas y columnas -->
+    <Grid>
+        <!-- StackPanel: apila sus hijos uno debajo de otro -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <!-- x:Name da un nombre al elemento para usarlo desde el código C# -->
+            <TextBlock x:Name="mensaje" Text="Bienvenido a WPF" FontSize="20" Margin="0,0,0,16"
+                       HorizontalAlignment="Center" />
+
+            <!-- Click="..." conecta el botón con un método del código C# -->
+            <Button x:Name="aceptar" Content="Aceptar" Width="120" Height="32" Click="Aceptar_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

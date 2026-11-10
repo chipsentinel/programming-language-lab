@@ -1,0 +1,9 @@
+<!-- App.xaml: la aplicación en sí. StartupUri indica qué ventana se abre al arrancar. -->
+<Application x:Class="WpfIntroduction.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+    </Application.Resources>
+</Application>

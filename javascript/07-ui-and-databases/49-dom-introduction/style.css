@@ -1,0 +1,35 @@
+/* style.css: la APARIENCIA de la página (colores, tamaños, posición).
+   Se separa de la estructura (HTML) y del comportamiento (JavaScript). */
+
+/* Un selector indica a qué elementos se aplica: body, main, h1, button... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;           /* 100vh = toda la altura de la ventana */
+    display: flex;               /* flex: organiza los hijos en fila o columna */
+    justify-content: center;     /* centra horizontalmente */
+    align-items: center;         /* centra verticalmente */
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 120px;
+    height: 32px;
+    cursor: pointer;
+}
+
+button:hover {                   /* :hover: cuando el ratón está encima */
+    background-color: #dbeafe;
+}
+
+button:disabled {                /* :disabled: cuando el botón está desactivado */
+    cursor: not-allowed;
+}

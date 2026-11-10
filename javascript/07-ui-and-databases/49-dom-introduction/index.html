@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    index.html: la ESTRUCTURA de la página, escrita en HTML (un lenguaje de etiquetas, como el XAML de WPF).
+    Cada etiqueta es un elemento de la interfaz: html, body, h1, button...
+    Los atributos (id, class...) son sus propiedades.
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- title: el título de la pestaña (en WPF, el título de la ventana) -->
+    <title>Ventana principal</title>
+    <!-- La apariencia va en un archivo aparte: style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- main: contenedor que organiza el contenido (como el Grid / StackPanel de WPF) -->
+    <main>
+        <!-- id da un nombre al elemento para usarlo desde JavaScript (como x:Name en WPF) -->
+        <h1 id="mensaje">Bienvenido al DOM</h1>
+
+        <button id="aceptar" type="button">Aceptar</button>
+    </main>
+
+    <!-- El código va en otro archivo: index.js. Se carga al final del body, cuando los elementos ya existen -->
+    <script src="index.js"></script>
+</body>
+</html>
